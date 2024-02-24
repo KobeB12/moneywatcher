@@ -50,6 +50,7 @@ body{
     width: 250 px;
     padding: 10px 14px;
     background: var(--sidebar-color);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 a:link, a:visited  {
@@ -110,6 +111,7 @@ a:link, a:visited  {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
   
   .dropbtn:hover, .dropbtn:focus {
@@ -152,6 +154,7 @@ a:link, a:visited  {
     margin-top: 10%;
     font-size: 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .block-leaving{
     position: fixed;
@@ -162,6 +165,7 @@ a:link, a:visited  {
     font-size: 20px;
     border-radius: 10px;
     display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .container{
     text-align: center;
@@ -206,4 +210,30 @@ a:link, a:visited  {
     text-align: center;
     width: 30%;
     height: 30%;
+}
+
+.deposit-container {
+    background-color: #f1f1f1;
+    padding: 50px;
+    border-radius: 15%;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 40%;
+    text-align: center;
+    width: 30%;
+    height: 30%;
+}
+h1{
+    font-size: 65px;
+    position: fixed;
+    margin-left: 50%;
+    margin-top: 5%;
+}
+.card h2{
+    position:relative;
+    vertical-align: middle;
+    text-align: center;
+}
+p {
+    color: white;
 }
