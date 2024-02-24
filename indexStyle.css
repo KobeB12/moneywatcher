@@ -100,12 +100,12 @@ a:link, a:visited  {
 
 .dropbtn {
     position: fixed;
-    margin-left: 15%;
+    margin-left: 17%;
     margin-top: 0%;
     background-color: #3498DB;
     color: black;
     border-radius: 15px;
-    padding: 50px;
+    padding: 30px;
     padding-left: 10%;
     padding-right: 10%;
     font-size: 16px;
@@ -201,6 +201,7 @@ a:link, a:visited  {
 }
 
 .destination-container {
+    position: fixed;
     background-color: #f1f1f1;
     padding: 50px;
     border-radius: 15%;
@@ -213,6 +214,7 @@ a:link, a:visited  {
 }
 
 .deposit-container {
+    position: fixed;
     background-color: #f1f1f1;
     padding: 50px;
     border-radius: 15%;
@@ -237,4 +239,5 @@ h1{
 
 p {
     color: white;
+    font-size: 45px;
 }

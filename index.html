@@ -79,7 +79,7 @@
         <div class="submit-area">
             <h4>Withdraw Amount</h4><br>
             <input id="withdraw-amount" type="text" class="form-control" placeholder="Enter withdraw amount"><br><br>
-            <button id="withdraw-btn" class="btn btn-success" onclick="withdraw()">Withdraw</button>
+            <button id="withdraw-btn" class="btn btn-success" onclick="spending(); withdraw()">Withdraw</button>
         </div>
     </div>
 </div>
@@ -89,7 +89,7 @@
         <div class="submit-area">
             <h4>Deposit Amount</h4><br>
             <input id="deposit-amount" type="text" class="form-control" placeholder="Enter deposit amount"><br><br>
-            <button id="deposit-btn" class="btn btn-success" onclick="deposit()">deposit</button>
+            <button id="deposit-btn" class="btn btn-success" onclick="deposit(); income()">Deposit</button>
         </div>
     </div>
 </div>
@@ -112,9 +112,35 @@
 </script>
 
     <div id="container">
-        <button class="block-incoming"> Incoming </button>
-        <button class="block-leaving"> Leaving </button>
+        <button class="block-incoming"><p id="income">0</p></button>
+        <button class="block-leaving"><p id="spending">0</p></button>
     </div>
+
+<script>
+    function income() {
+        var x = document.getElementById("income").textContent;
+        var y = document.getElementById("deposit-amount").value;
+        var total = parseFloat(x) + parseFloat(y);
+        document.getElementById("income").innerHTML = total;
+    }
+</script>
+
+<script>
+function spending() {
+  var x = document.getElementById("spending").textContent;
+  var y = document.getElementById("deposit-amount").value;
+
+  // Check for empty or non-numeric values:
+  if (isNaN(x) || isNaN(y)) {
+    alert("Please enter valid numeric values.");
+    return;
+  }
+
+  var total = parseFloat(x) + parseFloat(y);
+  document.getElementById("spending").innerHTML = total;
+}
+</script>
+
     <div class="card">
         <h2>Coming Soon...</h2>
     </div>
