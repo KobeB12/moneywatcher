@@ -4,7 +4,6 @@
     <meta charset = "UTF-8">
     <meta http-equiv="X-UA-Compatible" content = "IE=edge">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <link rel="import" href="C:\Users\anjol\OneDrive\Desktop\Hackathon PV\moneywatcher\moneywatcher\index.html">
 
     <!-- CSS -->
     <link rel="stylesheet" href="indexStyle.css">
@@ -76,50 +75,14 @@
         </div>
     </div>
 
-    <div class="withdraw-container">
+    <div class="deposit-container">
             <div class="col-lg-6">
                 <div class="submit-area">
-                    <h4>Withdraw Amount</h4><br>
-                    <input id="withdraw-amount" type="text" class="form-control" placeholder="Enter withdraw amount"><br><br>
-                    <button id="withdraw-btn" class="btn btn-success" onclick="totalmoney()">Withdraw</button>
+                    <h4>Deposit Amount</h4><br>
+                    <input id="deposit-amount" type="text" class="form-control" placeholder="Enter deposit amount"><br><br>
+                    <button id="deposit-btn" class="btn btn-success">deposit</button>
                 </div>
             </div>
         </div>
-    </div>    
-
-    <script>
-        function totalmoney() {
-        var x = 1200;
-        var y = document.getElementById("withdraw-amount").value;
-        document.getElementById("money").innerHTML = x + y;
-        }
-    </script>
-
-    <div class="destination-container">
-        <div class="col-lg-6">
-            <div class="submit-area">
-                <h4>Payment Destination</h4><br>
-                <input id="destination" type="text" class="form-control" placeholder="Where/Who is it going to? "><br><br>
-                <button id="destination-btn" class="btn btn-success">submit</button>
-            </div>
-        </div>
-        </div>
-    </div>
-        <script>
-    $(function() {
-      $("#checkingBalance").on("click", function() {
-        var checkingBalance = parseInt($(this).text().replace("$", "")); 
-        console.log("This is the checking balance. ", checkingBalance); 
-        var deposit = parseInt($("#checkingInput").val()); 
-        console.log("This is the deposit: " + deposit);
-        var total = deposit + checkingBalance; 
-        console.log("This is the total: " + total); 
-        $("#checkingBalance").html("$" + total);
-        if (total > 0) {
-          $("body").removeClass("zero")
-        }
-      })
-    });
-  </script>
 </body>
 </html>

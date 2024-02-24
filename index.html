@@ -64,7 +64,7 @@
 
 <div class="dropdown">
     <button onclick="myFunction()" class="dropbtn"> 
-        <p id = "money"> 1200 </p>
+        <p id="current-balance">1000</p>
     </button>
   <div id="myDropdown" class="dropdown-content">
     <a href="withdraw.html">widthdraw</a>
@@ -72,45 +72,42 @@
   </div>
 </div>
 
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
 
 <div class="withdraw-container">
     <div class="col-lg-6">
         <div class="submit-area">
             <h4>Withdraw Amount</h4><br>
             <input id="withdraw-amount" type="text" class="form-control" placeholder="Enter withdraw amount"><br><br>
-            <button id="withdraw-btn" class="btn btn-success" onclick="totalmoney()">Withdraw</button>
+            <button id="withdraw-btn" class="btn btn-success" onclick="withdraw()">Withdraw</button>
         </div>
     </div>
 </div>
+
+<div class="deposit-container">
+    <div class="col-lg-6">
+        <div class="submit-area">
+            <h4>Deposit Amount</h4><br>
+            <input id="deposit-amount" type="text" class="form-control" placeholder="Enter deposit amount"><br><br>
+            <button id="deposit-btn" class="btn btn-success" onclick="deposit()">deposit</button>
+        </div>
+    </div>
 </div>
 
 <script>
-    function totalmoney() {
-    var x = 1200;
-    var y = document.getElementById("withdraw-amount").value;
-    total = parseFloat(x) + parseFloat(y);
-    document.getElementById("money").innerHTML = total;
+    function withdraw() {
+        var x = document.getElementById("current-balance").textContent;
+        var y = document.getElementById("withdraw-amount").value;
+        var total = parseFloat(x) - parseFloat(y);
+        document.getElementById("current-balance").innerHTML = total;
+    }
+</script>
+<script>
+    function deposit() {
+        var x = document.getElementById("current-balance").textContent;
+        var y = document.getElementById("deposit-amount").value;
+        var total = parseFloat(x) + parseFloat(y);
+        document.getElementById("current-balance").innerHTML = total;
     }
 </script>
 

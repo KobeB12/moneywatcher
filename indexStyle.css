@@ -193,8 +193,8 @@ a:link, a:visited  {
     padding: 50px;
     border-radius: 15%;
     position: absolute;
-    margin-top: 17%;
-    margin-left: 20%;
+    margin-top: 19%;
+    margin-left: 15%;
     text-align: center;
     width: 30%;
     height: 30%;
@@ -217,8 +217,8 @@ a:link, a:visited  {
     padding: 50px;
     border-radius: 15%;
     position: absolute;
-    margin-top: 15%;
-    margin-left: 40%;
+    margin-top: 35%;
+    margin-left: 15%;
     text-align: center;
     width: 30%;
     height: 30%;
@@ -234,6 +234,7 @@ h1{
     vertical-align: middle;
     text-align: center;
 }
+
 p {
     color: white;
 }
