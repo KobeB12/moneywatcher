@@ -60,11 +60,15 @@
         </div>
     </nav>
 
+    <h1> Welcome back! </h1>
+
 <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn"> 1200 </button>
+    <button onclick="myFunction()" class="dropbtn"> 
+        <p id = "money"> yo </p>
+    </button>
   <div id="myDropdown" class="dropdown-content">
     <a href="withdraw.html">widthdraw</a>
-    <a href="#about">Deposit</a>
+    <a href="deposit.html">Deposit</a>
   </div>
 </div>
 
@@ -89,13 +93,19 @@ window.onclick = function(event) {
   }
 }
 </script>
+<script>
+    var x = 0;
+    var y = 10; 
+    document.getElementById("money").innerHTML = 510 + 6;
+</script>
 
     <div id="container">
         <button class="block-incoming"> Incoming </button>
         <button class="block-leaving"> Leaving </button>
     </div>
     <div class="card">
-        
+        <h2>Coming Soon...</h2>
     </div>
+
 </body>
 </html>
