@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="indexStyle.css">
+    <script src = "money.js"></script>
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <nav class = "sidebar">
+        <header>
+            <div class = "image-text">
+                <span class = "image">
+                    <img src = "logo.jpeg" alt = "logo">
+                </span>
+                <i class = 'bx bx-chevron-right toggle'></i>
+            </div>
+        </header>
+
+        <div class="menu-bar"> 
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href = "#">
+                            <i class = 'bx bx-home-alt'></i>
+                            <span class="text nav-text"> <a href = "index.html"> Dashboard </a></span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href = "#">
+                            <i class = 'bx bx-history' ></i>
+                            <span class="text nav-text">Transaction History</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href = "#">
+                            <i class='bx bx-donate-heart'></i>
+                            <span class="text nav-text">Donation Tracking</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href = "#">
+                            <i class='bx bx-money'></i>
+                            <span class="text nav-text">Funds</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href = "#">
+                            <i class='bx bx-door-open'></i>                            
+                            <span class="text nav-text">Sign out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="withdraw-container">
+            <div class="col-lg-6">
+                <div class="submit-area">
+                    <h4>Withdraw Amount</h4><br>
+                    <input id="withdraw-amount" type="text" class="form-control" placeholder="Enter withdraw amount"><br><br>
+                    <button id="withdraw-btn" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="destination-container">
+        <div class="col-lg-6">
+            <div class="submit-area">
+                <h4>Payment Destination</h4><br>
+                <input id="destination" type="text" class="form-control" placeholder="Where/Who is it going to? "><br><br>
+                <button id="destination-btn" class="btn btn-success">submit</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
