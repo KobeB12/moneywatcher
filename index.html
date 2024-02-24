@@ -4,7 +4,7 @@
     <meta charset = "UTF-8">
     <meta http-equiv="X-UA-Compatible" content = "IE=edge">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-
+    <link rel="import" href="C:\Users\anjol\OneDrive\Desktop\Hackathon PV\moneywatcher\moneywatcher\withdraw.html">
     <!-- CSS -->
     <link rel="stylesheet" href="indexStyle.css">
     <!-- Boxicons CSS -->
@@ -64,7 +64,7 @@
 
 <div class="dropdown">
     <button onclick="myFunction()" class="dropbtn"> 
-        <p id = "money"> yo </p>
+        <p id = "money"> 1200 </p>
     </button>
   <div id="myDropdown" class="dropdown-content">
     <a href="withdraw.html">widthdraw</a>
@@ -93,10 +93,25 @@ window.onclick = function(event) {
   }
 }
 </script>
+
+<div class="withdraw-container">
+    <div class="col-lg-6">
+        <div class="submit-area">
+            <h4>Withdraw Amount</h4><br>
+            <input id="withdraw-amount" type="text" class="form-control" placeholder="Enter withdraw amount"><br><br>
+            <button id="withdraw-btn" class="btn btn-success" onclick="totalmoney()">Withdraw</button>
+        </div>
+    </div>
+</div>
+</div>
+
 <script>
-    var x = 0;
-    var y = 10; 
-    document.getElementById("money").innerHTML = 510 + 6;
+    function totalmoney() {
+    var x = 1200;
+    var y = document.getElementById("withdraw-amount").value;
+    total = parseFloat(x) + parseFloat(y);
+    document.getElementById("money").innerHTML = total;
+    }
 </script>
 
     <div id="container">
